@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import ColorChanger from './components/ColorChanger'
 import JavascriptLand from './components/JavascriptLand'
+import GitHubUserFinder from './components/GitHubUserFinder'
 import Home from './components/Home'
 import {
   BrowserRouter as Router,
@@ -17,7 +18,10 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/home">Home</Link>
+            </li>
+            <li>
+              <Link to="/github-user-finder">GitHub User Finder</Link>
             </li>
             <li>
               <Link to="/color-changer">Color Changer</Link>
@@ -31,6 +35,9 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
           <Route path="/color-changer">
             <ColorChanger />
           </Route>
@@ -38,7 +45,7 @@ export default function App() {
             <JavascriptLand />
           </Route>
           <Route path="/">
-            <Home />
+            <GitHubUserFinder />
           </Route>
         </Switch>
       </div>
