@@ -1,0 +1,32 @@
+.color-maker-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-maker-accordion-container {
+  height: 10%;
+  padding: 0.25rem;
+}
+
+.color-box {
+  display: flex;
+  align-items: top;
+  font-size: 3rem;
+  overflow: hidden;
+  height: 80%;
+}
+
+.color-box-container {
+  margin: 0.15rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+.pressable {
+  cursor: pointer;
+}
+
+.color-maker-accordion-content {
+  color: #353333;
+  font-size: 1rem;
+}

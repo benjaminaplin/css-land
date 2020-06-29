@@ -1,0 +1,17 @@
+.treehouse-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(1rem, 1fr));
+  grid-gap: 0.75rem;
+  border: 3px solid salmon;
+}
+
+.treehouse-item-container {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.treehouse-item-container div {
+  cursor: pointer;
+  color: grey;
+}
