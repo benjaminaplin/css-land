@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--gray);
+  overflow: hidden;
+  font-family: Montserrat, sans-serif;
+  padding: 1rem;
+  overflow: auto;
+  height: 100%;
 }
 
 code {
@@ -22,21 +28,4 @@ code {
 .color-title {
   margin: 1rem auto;
   color: white;
-}
-
-.menu-container {
-  display: flex;
-  flex-direction: row;
-  background-color: cornflowerblue;
-  height: 5rem;
-  border: 1px solid lime;
-}
-
-.menu-item {
-  display: flex;
-  width: 15%;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid lime;
-  color: cornflowerblue;
 }

@@ -6,11 +6,12 @@ import GitHubUserFinder from './components/GitHubUserFinder'
 import ErrorBoundary from './components/ErrorBoundary'
 import TreeHouse from './components/TreeHouse'
 import ColorMaker from './components/ColorMaker'
+import Animation from './components/Animation'
 import Home from './components/Home'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import ParallaxPlayground from './components/ParallaxPlayground'
 import Footer from './components/ui/Footer'
-
+import { Menu } from 'react-feather'
 export default function App() {
   return (
     <ErrorBoundary>
@@ -18,6 +19,9 @@ export default function App() {
         <div>
           <nav className="menu">
             <div className="menu-container">
+              <div className="menu-item">
+                <Link to="/animation">Animation</Link>
+              </div>
               <div className="menu-item">
                 <Link to="/home">Home</Link>
               </div>
@@ -40,13 +44,20 @@ export default function App() {
                 <Link to="/color-maker">Color Maker</Link>
               </div>
             </div>
+            <div className="hamburger">
+              <Menu size={32} />
+            </div>
           </nav>
 
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
+
           <Switch>
             <Route path="/home">
               <Home />
+            </Route>
+            <Route path="/animation">
+              <Animation />
             </Route>
             <Route path="/color-changer">
               <ColorChanger />

@@ -1,6 +1,4 @@
 .parallax-container {
   background: salmon;
-  height: 80.8vh;
-  overflow: hidden;
   z-index: -100;
 }

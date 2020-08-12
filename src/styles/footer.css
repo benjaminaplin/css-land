@@ -1,7 +1,6 @@
-.footer {
-  background-color: black;
-  height: 20vh;
-  position: relative;
-  /* bottom: 90vh; */
+.parallax.footer {
+  background-color: pink;
+  height: 22.5vh;
   z-index: 100;
+  border: 4px solid blue;
 }
